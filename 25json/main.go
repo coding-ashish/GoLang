@@ -7,7 +7,7 @@ import (
 
 func main() {
 	fmt.Println("Welcome to the json lecture")
-	JsonInGo()
+	EncodeJson()
 }
 
 type Course struct {
@@ -18,7 +18,7 @@ type Course struct {
 	Tags     []string `json:"tags,omitempty"` //omitempty is used to specify the Golang that we don't need to omit tags if it is nil or null
 }
 
-func JsonInGo() {
+func EncodeJson() {
 
 	Courses := []Course{
 		{"Javascript", 49, "Youtube", "abcd123", []string{"Good course", "A rated"}},
